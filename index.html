@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme School</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #f3e7ff, #ffe7f3);
+        min-height: 100vh;
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      header {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
+      header a {
+        text-decoration: none;
+        color: #666;
+      }
+      header a:hover {
+        color: #9333ea;
+      }
+      header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #9333ea;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+      }
+      nav ul li {
+        margin-left: 1rem;
+      }
+      .button {
+        background-color: #9333ea;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+      }
+      .button:hover {
+        color: white;
+        background-color: #7e22ce;
+      }
+      .hero {
+        text-align: center;
+        padding: 4rem 0;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .courses {
+        background-color: white;
+        padding: 4rem 0;
+      }
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      .course-card {
+        border: 1px solid #e5e5e5;
+        border-radius: 0.5rem;
+        padding: 1rem;
+      }
+      .badge {
+        background-color: #f3e7ff;
+        color: #9333ea;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+      }
+      .about {
+        background-color: #f9f9f9;
+        padding: 4rem 0;
+      }
+      .about-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .about-image {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+      .about-text {
+        flex: 1;
+        min-width: 300px;
+        padding: 1rem;
+      }
+      .timeline {
+        background-color: white;
+        padding: 4rem 0;
+      }
+      .timeline-event {
+        border: 1px solid #e5e5e5;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      footer {
+        background-color: #9333ea;
+        color: white;
+        padding: 2rem 0;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 768px) {
+        header .container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        nav ul {
+          margin-top: 1rem;
+        }
+        .about-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">Meme School</a>
+        <nav>
+          <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#history">Meme History</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="button">Apply Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Welcome to Meme School</h1>
+          <p>Master the Art of Memes and Their Rich History</p>
+          <a href="#" class="button">Start Your Meme Journey</a>
+        </div>
+      </section>
+
+      <section id="courses" class="courses">
+        <div class="container">
+          <h2>Our Courses</h2>
+          <div class="course-grid">
+            <div class="course-card">
+              <h3>Meme Creation 101</h3>
+              <p>Learn the basics of crafting viral memes</p>
+              <span class="badge">Beginner</span>
+            </div>
+            <div class="course-card">
+              <h3>Advanced Memetics</h3>
+              <p>Dive deep into complex meme structures and meta-memes</p>
+              <span class="badge">Advanced</span>
+            </div>
+            <div class="course-card">
+              <h3>Meme History Through the Ages</h3>
+              <p>
+                Explore the evolution of memes from ancient times to the digital
+                era
+              </p>
+              <span class="badge">Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>Meet Our Chancellor</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                src="/db2.png"
+                alt="David Bowie as Meme School Chancellor"
+                width="400"
+                height="400"
+                style="
+                  border-radius: 50%;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                "
+              />
+            </div>
+            <div class="about-text">
+              <h3>David Bowie</h3>
+              <p>
+                The Starman himself, David Bowie, serves as the honorary
+                chancellor of Meme School. With his chameleon-like ability to
+                adapt and innovate, Bowie embodies the spirit of meme culture.
+              </p>
+              <p>
+                Under his guidance, our institution pushes the boundaries of
+                creativity and self-expression, just as Bowie did throughout his
+                legendary career.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="history" class="timeline">
+        <div class="container">
+          <h2>Meme History Timeline</h2>
+          <div class="timeline-events">
+            <div class="timeline-event">
+              <h3>1990s</h3>
+              <p>
+                Early internet memes emerge, including 'Dancing Baby' and
+                'Hamster Dance'
+              </p>
+            </div>
+            <div class="timeline-event">
+              <h3>2000s</h3>
+              <p>Rise of image macros and 'LOLcats'</p>
+            </div>
+            <div class="timeline-event">
+              <h3>2010s</h3>
+              <p>
+                Memes become mainstream with the growth of social media
+                platforms
+              </p>
+            </div>
+            <div class="timeline-event">
+              <h3>2020s</h3>
+              <p>AI-generated memes and the era of meta-memes begin</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Meme School</h3>
+            <p>Educating the meme-makers of tomorrow, today.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#history">Meme History</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: david@memeschool.org</p>
+            <p>Phone: (555) MEME-101</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem">
+          <p>&copy; 2024 Meme School. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
